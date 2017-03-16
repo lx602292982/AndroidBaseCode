@@ -3,11 +3,11 @@ package com.yzqs.baselibrary.fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.trello.rxlifecycle.components.support.RxFragment;
 import com.yzqs.baselibrary.activity.BaseActivity;
 
 import butterknife.ButterKnife;
@@ -17,7 +17,7 @@ import butterknife.ButterKnife;
  * Author: Othershe
  * Time:  2016/8/11 10:41
  */
-public abstract class BaseFragment extends Fragment {
+public abstract class BaseFragment extends RxFragment {
     protected BaseActivity mActivity;
     protected View mRootView;
 

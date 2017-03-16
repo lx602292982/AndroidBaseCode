@@ -8,6 +8,7 @@ import android.support.annotation.CallSuper;
 import android.support.annotation.CheckResult;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 
@@ -18,7 +19,6 @@ import com.trello.rxlifecycle.RxLifecycle;
 import com.yzqs.baselibrary.view.IBaseView;
 import com.yzqs.utilslibrary.DrawerToast;
 import com.yzqs.utilslibrary.MyActivityManager;
-import com.zhy.autolayout.AutoLayoutActivity;
 
 import rx.Observable;
 import rx.subjects.BehaviorSubject;
@@ -28,7 +28,7 @@ import rx.subjects.BehaviorSubject;
  * Author: Othershe
  * Time:  2016/8/11 10:35
  */
-public abstract class BaseActivity extends AutoLayoutActivity implements ActivityLifecycleProvider, IBaseView {
+public abstract class BaseActivity extends AppCompatActivity implements ActivityLifecycleProvider, IBaseView {
     protected Activity mContext;
     private MyActivityManager myActivityManager;
     public DrawerToast mToast;
